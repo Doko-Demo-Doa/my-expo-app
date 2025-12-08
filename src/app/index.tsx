@@ -1,5 +1,6 @@
-import { Button, Chip } from "heroui-native";
+import { Button } from "heroui-native";
 import { StyleSheet, Text, View } from "react-native";
+import { SheetManager } from "react-native-actions-sheet";
 
 export default function Page() {
   return (
@@ -9,7 +10,13 @@ export default function Page() {
         <Text style={styles.subtitle}>This is the first page of your app.</Text>
       </View>
 
-      <Button onPress={() => console.log("Pressed!")}>Get Started</Button>
+      <Button
+        onPress={() => {
+          SheetManager.show("example-sheet");
+        }}
+      >
+        Get Started
+      </Button>
     </View>
   );
 }
