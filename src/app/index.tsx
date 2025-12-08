@@ -1,3 +1,4 @@
+import { Button, Chip } from "heroui-native";
 import { StyleSheet, Text, View } from "react-native";
 
 export default function Page() {
@@ -7,6 +8,8 @@ export default function Page() {
         <Text style={styles.title}>Hello World</Text>
         <Text style={styles.subtitle}>This is the first page of your app.</Text>
       </View>
+
+      <Button onPress={() => console.log("Pressed!")}>Get Started</Button>
     </View>
   );
 }
