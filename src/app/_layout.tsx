@@ -7,14 +7,14 @@ import { SheetProvider } from "react-native-actions-sheet";
 import { Sheets } from "../components/rnas/sheets";
 
 export default function RootLayout() {
-  return (
-    <GestureHandlerRootView style={{ flex: 1 }}>
-      <SheetProvider>
-        <HeroUINativeProvider>
-          <Slot />
-          <Sheets />
-        </HeroUINativeProvider>
-      </SheetProvider>
-    </GestureHandlerRootView>
-  );
+	return (
+		<GestureHandlerRootView style={{ flex: 1 }}>
+			<SheetProvider>
+				<HeroUINativeProvider>
+					<Slot />
+					<Sheets />
+				</HeroUINativeProvider>
+			</SheetProvider>
+		</GestureHandlerRootView>
+	);
 }
